@@ -19,59 +19,59 @@ Examplo:
 Input: arr[] = {10, 1, 10, 3, 10, 1, 1, 2, 3, 3}
 Output: 2
 
-#include <stdio.h>
-int main()
-{
+	#include <stdio.h>
+	int main()
+	{
 	// Se declaran las variables de las entradas
-    int arr1[] = {10, 1, 10, 3, 10, 1, 1, 2, 3, 3};
-    int n;
-    int ctr=0;
-    int i, j, k;
-		n = 10;
+  	  int arr1[] = {10, 1, 10, 3, 10, 1, 1, 2, 3, 3};
+  	  int n;
+  	  int ctr=0;
+  	  int i, j, k;
+			n = 10;
 
 		
-    printf("\n El elemento único del arreglo es: \n");
-    for(i=0; i<n; i++)
-    {
-        ctr=0;
-        for(j=0,k=n; j<k+1; j++)
-        {
-            // Aumenta el contador cuando el valor buscado es duplicado
-            if (i!=j)
-            {
-		       if(arr1[i]==arr1[j])
-              {
-                 ctr++;
-               }
-             }
-        }
-       if(ctr==0)
-        {
-          printf(" %d ",arr1[i]);
-        }
-    }
-       printf("\n\n");
-}
+ 	   printf("\n El elemento único del arreglo es: \n");
+	    for(i=0; i<n; i++)
+ 	   {
+  	      ctr=0;
+    	    for(j=0,k=n; j<k+1; j++)
+        	{
+           	 // Aumenta el contador cuando el valor buscado es duplicado
+            	if (i!=j)
+            	{
+			       if(arr1[i]==arr1[j])
+        	      {
+                 	ctr++;
+               		}
+             	}
+        	}
+      	 if(ctr==0)
+      	  {
+        	  printf(" %d ",arr1[i]);
+     	   }
+	    }
+  	     printf("\n\n");
+	}
 
 ### Multiplicaciones y divisiones
 Realice un programa donde reciba 2 números enteros sin signo y permita realizar la división o la multiplicación de los
 mismos, usando solamente operadores binarios.
 
-int main(){
-	unsigned int a;
-	unsigned int b;
-	unsigned int result1;
-	unsigned int result2;
+	int main(){
+		unsigned int a;
+		unsigned int b;
+		unsigned int result1;
+		unsigned int result2;
 	
-	a = 20;
-	b = 5;
+		a = 20;
+		b = 5;
 	
-	result1 = a >> 2; // Dividir por 4
-	result2 = b << 2; // Multiplicar por 4
+		result1 = a >> 2; // Dividir por 4
+		result2 = b << 2; // Multiplicar por 4
 	
-	printf("Resultado 1: %d \n", result1);
-	printf("Resultado 2: %d \n", result2);
-}
+		printf("Resultado 1: %d \n", result1);
+		printf("Resultado 2: %d \n", result2);
+	}
 
 ### Calcule el cuadrado de un número sin utilizar ningún operador numérico.
 
@@ -86,8 +86,8 @@ Output: 49
 Input: n = 12
 Output: 144
 
-#include<stdio.h> 
-int main(){
+	#include<stdio.h> 
+	int main(){
 	// Se declaran las entradas de N y se les da su valor.
 	int N1 = 5;
 	int N2 = 7;
@@ -145,15 +145,15 @@ El siguiente es para una secuencia de 2-bit (n = 2)
   0000 0001 0011 0010 0110 0111 0101 0100 1100 1101 1111 
   1110 1010 1011 1001 1000
 
-#include <stdio.h>
-#include <malloc.h>
-#include <math.h>
-#include <string.h>     
-#include <stdlib.h>     
+	#include <stdio.h>
+	#include <malloc.h>
+	#include <math.h>
+	#include <string.h>     
+	#include <stdlib.h>     
 
-int *array, counter = 0;
+	int *array, counter = 0;
 
-void binary_conv(int a, int n){
+	void binary_conv(int a, int n){
     // En esta parte se generan los espacios que deberá tener el codigo de Grey,
     // los cuales dependen directamente del valor de entrada de n.
 	
@@ -169,10 +169,10 @@ void binary_conv(int a, int n){
 	while(i < 8){
     	printf("%c", b[i]);
     	i++;
-    }
-}
+  	  }
+	}
 
-int grey_code(int n){
+	int grey_code(int n){
 	// En esta parte se modifica el arreglo para que todos los
 	//valores queden en formato binario.
 
@@ -183,11 +183,11 @@ int grey_code(int n){
 		j = counter - 1;
 		while(j >= 0){
 			array[counter++] = array[j--] | 1 << i;
-		}
-	}	
-}
+			}
+		}	
+	}
 
-main(){
+	main(){
 	int n, i;
 	printf("\nEscribe el valor de n\n");
 	scanf("%d",&n);
@@ -198,8 +198,8 @@ main(){
 	for(i = 0; i < counter; i++){
 		binary_conv(array[i], n);
 		printf("\n");
+		}
 	}
-}
 
 ### Reporte
 Para esta práctica, reporta un screeshot de la demostración de cada uno de los problemas, así como adjuntando el código
