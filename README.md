@@ -1,4 +1,3 @@
-# Practica 4
 # Practica 4. Operaciones binarias en C 
 
 ## Objectivos
